@@ -1,0 +1,66 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    <h1>Entry Form</h1>
+    <p>Please note: schools are allowed to identify up to eight participants for each subject, but only the first four actually count for the scoring.</p>
+<form method="POST" action="/reroute">
+    <div class="form-group">
+     <label for="exampleFormControlInput1">School Name:</label>
+      <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Norman High School" name="school_input">
+    </div>
+
+      <div class="form-group">
+    <label for="exampleFormControlSelect1">Select Subject Area</label>
+    <select class="form-control" id="exampleFormControlSelect1" name="subject_input">
+      <option>Agriculture Shop</option>
+      <option>Agronomy</option>
+      <option>Communications</option>
+      <option>Electricity</option>
+      <option>Entomology</option>
+      <option>Environmental/Natural Resources</option>
+      <option>Farm Business Management</option>
+      <option>Floriculture</option>
+      <option>Land Judging</option>
+      <option>Livestock Evaluation - Junior</option>
+      <option>Livestock Evaluation - Senior</option>
+      <option>Meats</option>
+      <option>Milk Quality and Products</option>
+      <option>Nursery and Landscape</option>
+      <option>Quiz Bowl</option>
+      <option>Rangeland Judging</option>
+      <option>Soil and Water Conservation</option>
+      <option>Veterinary Science</option>
+    </select>
+  </div>
+
+
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Student Names:</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Student One" name="s1">
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Student Two" name="s2">
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Student Three" name="s3">
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Student Four" name="s4">
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Student Five" name="s5">
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Student Six" name="s6">
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Student Seven" name="s7">
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Student Eight" name="s8">
+  </div>
+  <div>
+    <input class="btn btn-primary" type="submit" value="Submit">
+  </div>
+</form>
+{% endblock %}
